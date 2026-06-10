@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análisis Orientado a Objetos – IDAI SIGAP-DIC</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+  <button class="sidebar-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2.5">
+      <line x1="3" y1="6" x2="21" y2="6" />
+      <line x1="3" y1="12" x2="21" y2="12" />
+      <line x1="3" y1="18" x2="21" y2="18" />
+    </svg></button>
+  <aside class="sidebar">
+    <a href="index.html" class="sidebar-logo">
+      <div class="logo-icon"><i data-lucide="brain" style="width:24px;height:24px;stroke:white"></i></div>
+      <div class="logo-text">IDAI<br><span>SIGAP-DIC</span></div>
+    </a>
+    <nav class="sidebar-nav">
+      <span class="nav-section-label">Principal</span>
+      <ul style="list-style:none">
+        <li class="nav-item"><a href="index.html" class="nav-link"><span class="icon"><i
+                data-lucide="home"></i></span>Inicio</a></li>
+        <li class="nav-item nav-has-sub">
+          <a href="#" class="nav-link"><span class="icon"><i data-lucide="book-open"></i></span>Marco Teórico</a>
+          <ul class="nav-submenu">
+            <li><a href="marco-teorico.html#intro" class="nav-link">1. Introducción</a></li>
+            <li><a href="marco-teorico.html#antecedentes" class="nav-link">2. Antecedentes</a></li>
+            <li><a href="marco-teorico.html#planteamiento" class="nav-link">3. Planteamiento del Problema</a></li>
+            <li><a href="marco-teorico.html#arbol" class="nav-link">4. Árbol de Problemas</a></li>
+            <li><a href="marco-teorico.html#formulacion" class="nav-link">5. Formulación del Problema</a></li>
+            <li><a href="marco-teorico.html#objetivos" class="nav-link">6. Objetivos</a></li>
+            <li><a href="marco-teorico.html#justificacion" class="nav-link">7. Justificación</a></li>
+            <li><a href="marco-teorico.html#alcances" class="nav-link">8. Alcances y Límites</a></li>
+            <li><a href="marco-teorico.html#metodologia" class="nav-link">10. Metodología RUP</a></li>
+            <li><a href="marco-teorico.html#planificacion" class="nav-link">12. Planificación</a></li>
+          </ul>
+        </li>
+        <span class="nav-section-label">Análisis Estructurado</span>
+        <li class="nav-item nav-has-sub">
+          <a href="#" class="nav-link"><span class="icon"><i data-lucide="leaf"></i></span>Modelo Ambiental</a>
+          <ul class="nav-submenu">
+            <li><a href="modelo-ambiental.html#proposito" class="nav-link">13.1 Declaración de Propósitos</a></li>
+            <li><a href="modelo-ambiental.html#contexto" class="nav-link">13.2 Diagrama de Contexto</a></li>
+            <li><a href="modelo-ambiental.html#acontecimientos" class="nav-link">13.3 Lista de Acontecimientos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item nav-has-sub">
+          <a href="#" class="nav-link"><span class="icon"><i data-lucide="git-branch"></i></span>Modelo de
+            Comportamiento</a>
+          <ul class="nav-submenu">
+            <li><a href="modelo-comportamiento.html#dfd" class="nav-link">14. DFD por Niveles</a></li>
+            <li><a href="modelo-comportamiento.html#diagrama-procesos" class="nav-link">15. Diagrama de Procesos</a>
+            </li>
+          </ul>
+        </li>
+        <span class="nav-section-label">Orientado a Objetos</span>
+        <li class="nav-item nav-has-sub">
+          <a href="#" class="nav-link"><span class="icon"><i data-lucide="shapes"></i></span>Análisis OO</a>
+          <ul class="nav-submenu">
+            <li><a href="orientado-objetos.html#requerimientos" class="nav-link">16. Requerimientos</a></li>
+            <li><a href="orientado-objetos.html#casos-uso" class="nav-link">17–18. Casos de Uso</a></li>
+            <li><a href="orientado-objetos.html#modulo1" class="nav-link">18.1 Módulo I</a></li>
+            <li><a href="orientado-objetos.html#modulo2" class="nav-link">18.2 Módulo II</a></li>
+            <li><a href="orientado-objetos.html#modulo3" class="nav-link">18.3 Módulo III</a></li>
+            <li><a href="orientado-objetos.html#modulo4" class="nav-link">18.4 Módulo IV</a></li>
+            <li><a href="orientado-objetos.html#casos-uso-expandido" class="nav-link">19. C.U. Expandido</a></li>
+            <li><a href="orientado-objetos.html#clases" class="nav-link">20. Diagrama de Clases</a></li>
+            <li><a href="orientado-objetos.html#der" class="nav-link">21. Diagrama E-R</a></li>
+          </ul>
+        </li>
+        <span class="nav-section-label">Más</span>
+        <li class="nav-item"><a href="videos.html" class="nav-link"><span class="icon"><i
+                data-lucide="video"></i></span>Videos</a></li>
+        <li class="nav-item"><a href="contactos.html" class="nav-link"><span class="icon"><i
+                data-lucide="users"></i></span>Contactos</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">© 2026 IDAI Bolivia<br>UMSA · Inf-241</div>
+  </aside>
+
+  <div class="main-content">
+    <header class="topbar">
+      <span class="topbar-title">Universidad Mayor de San Andrés — <span>Inf-241</span></span>
+      <a href="contactos.html" class="pill pill-outline">Contacto</a>
+    </header>
+    <section class="page-hero" style="border-bottom:4px solid var(--secondary)">
+      <div class="breadcrumb"><a href="index.html">Inicio</a><span>›</span> Análisis Orientado a Objetos</div>
+      <h1><i data-lucide="shapes"></i> Análisis y Diseño Orientado a Objetos</h1>
+      <p>Requerimientos del sistema, casos de uso, diagrama de clases y diagrama entidad–relación del SIGAP-DIC-IDAI.
+      </p>
+    </section>
+
+    <main class="page-content">
+
+      <!-- REQUERIMIENTOS FUNCIONALES -->
+      <div id="requerimientos" class="intro-box" style="border-left-color:var(--primary)">
+        <h2><i data-lucide="list-todo"></i> 16.1 Requerimientos Funcionales</h2>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Requerimiento</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>RF01</strong></td>
+              <td>Registro de Beneficiarios</td>
+              <td>El sistema debe registrar datos personales, tipo de paciente (interno/externo) y grado de
+                discapacidad.</td>
+            </tr>
+            <tr>
+              <td><strong>RF02</strong></td>
+              <td>Gestión de Cuidadores</td>
+              <td>Vincular al beneficiario con un tutor o responsable legal.</td>
+            </tr>
+            <tr>
+              <td><strong>RF03</strong></td>
+              <td>Registro de Evaluaciones</td>
+              <td>Permitir la creación de una evaluación diagnóstica inicial.</td>
+            </tr>
+            <tr>
+              <td><strong>RF04</strong></td>
+              <td>Historial Clínico y Educativo</td>
+              <td>Generar y consultar un historial completo por beneficiario.</td>
+            </tr>
+            <tr>
+              <td><strong>RF05</strong></td>
+              <td>Gestión de Especialistas</td>
+              <td>Registrar al personal del centro (médicos, terapeutas, psicólogos).</td>
+            </tr>
+            <tr>
+              <td><strong>RF06</strong></td>
+              <td>Asignación de Terapias</td>
+              <td>Permitir que un especialista asigne un plan o programa terapéutico a un beneficiario.</td>
+            </tr>
+            <tr>
+              <td><strong>RF07</strong></td>
+              <td>Control de Sesiones</td>
+              <td>Registrar la asistencia y el procedimiento realizado en cada sesión de terapia.</td>
+            </tr>
+            <tr>
+              <td><strong>RF08</strong></td>
+              <td>Control de Costos</td>
+              <td>Registrar el pago de servicios para pacientes externos (ej. 10 Bs por terapia, 60 Bs por evaluación).
+              </td>
+            </tr>
+            <tr>
+              <td><strong>RF09</strong></td>
+              <td>Generación de Informes</td>
+              <td>Generar reportes mensuales estadísticos con formas de ingreso, diagnósticos y procedimientos
+                realizados.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- REQUERIMIENTOS NO FUNCIONALES -->
+      <div class="intro-box" style="border-left-color:var(--purple)">
+        <h2><i data-lucide="shield-check"></i> 16.2 Requerimientos No Funcionales</h2>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Tipo</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>RNF01</strong></td>
+              <td>Seguridad</td>
+              <td>Solo personal autorizado accede a datos sensibles.</td>
+            </tr>
+            <tr>
+              <td><strong>RNF02</strong></td>
+              <td>Disponibilidad</td>
+              <td>Sistema disponible 24/7 para consultas.</td>
+            </tr>
+            <tr>
+              <td><strong>RNF03</strong></td>
+              <td>Usabilidad</td>
+              <td>Interfaz sencilla y accesible para el personal del IDAI.</td>
+            </tr>
+            <tr>
+              <td><strong>RNF04</strong></td>
+              <td>Desempeño</td>
+              <td>Búsquedas en menos de 2 segundos.</td>
+            </tr>
+            <tr>
+              <td><strong>RNF05</strong></td>
+              <td>Escalabilidad</td>
+              <td>Soporte para crecer en volumen de datos históricos.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CASOS DE USO DE NEGOCIO -->
+      <div id="casos-uso" class="diagram-box">
+        <h3><i data-lucide="briefcase"></i> 17. Diagrama de Casos de Uso de Negocio</h3>
+        <p class="diagram-desc">Representa los procesos de negocio del IDAI desde la perspectiva organizacional,
+          mostrando los actores externos (Tutor, Especialista, Administrador) y los casos de uso de alto nivel que el
+          sistema debe soportar.</p>
+        <div class="diagram-img-wrap">
+          <img src="assets/img/casos-uso-negocio.png" alt="Casos de Uso de Negocio">
+        </div>
+      </div>
+
+      <!-- CASOS DE USO GENERAL -->
+      <div class="diagram-box">
+        <h3><i data-lucide="user-check"></i> 18. Diagrama de Casos de Uso</h3>
+        <p class="diagram-desc">Vista general de todos los casos de uso del sistema agrupados por actor, mostrando las
+          interacciones que cada rol (Personal Administrativo, Especialista, Cuidador) puede realizar en el
+          SIGAP-DIC-IDAI.</p>
+        <div class="diagram-img-wrap">
+          <img src="assets/img/casos-uso.png" alt="Casos de Uso">
+        </div>
+      </div>
+
+      <!-- MÓDULOS DE CASOS DE USO -->
+      <div class="intro-box" style="border-left-color:var(--secondary);margin-top:10px">
+        <h2><i data-lucide="layout-grid"></i> 18.1 – 18.4 Diagramas por Módulo</h2>
+        <p style="color:var(--text-light);font-size:14px">El sistema se divide en cuatro módulos funcionales. Cada
+          diagrama detalla los casos de uso específicos del módulo, sus actores y las relaciones de inclusión y
+          extensión entre ellos.</p>
+      </div>
+
+      <div id="modulo1" class="diagram-box">
+        <h3><i data-lucide="users"></i> 18.1 Módulo I – Gestión de Beneficiarios y Cuidadores</h3>
+        <p class="diagram-desc">Cubre el registro de nuevos beneficiarios (internos y externos), la vinculación con su
+          tutor o cuidador responsable, la consulta del expediente clínico y la clasificación por tipo de discapacidad.
+        </p>
+        <div class="diagram-img-wrap">
+          <img src="assets/img/modulo1-beneficiarios.png" alt="Módulo I – Gestión de Beneficiarios y Cuidadores">
+        </div>
+      </div>
+
+      <div id="modulo2" class="diagram-box">
+        <h3><i data-lucide="heart-pulse"></i> 18.2 Módulo II – Gestión Clínica y Atención Médica</h3>
+        <p class="diagram-desc">Incluye el registro de diagnósticos, evaluaciones médicas, programación de citas con
+          especialistas y la consulta o actualización del historial clínico de cada beneficiario.</p>
+        <div class="diagram-img-wrap">
+          <img src="assets/img/modulo2-clinica.png" alt="Módulo II – Gestión Clínica y Atención Médica">
+        </div>
+      </div>
+
+      <div id="modulo3" class="diagram-box">
+        <h3><i data-lucide="clipboard-check"></i> 18.3 Módulo III – Gestión Terapéutica</h3>
+        <p class="diagram-desc">Gestiona la asignación de planes terapéuticos, el registro de sesiones de terapia, el
+          seguimiento de la asistencia y la documentación del progreso terapéutico de cada paciente.</p>
+        <div class="diagram-img-wrap">
+          <img src="assets/img/modulo3-terapeutica.png" alt="Módulo III – Gestión Terapéutica">
+        </div>
+      </div>
+
+      <div id="modulo4" class="diagram-box">
+        <h3><i data-lucide="file-bar-chart"></i> 18.4 Módulo IV – Gestión Administrativa y Reportes</h3>
+        <p class="diagram-desc">Abarca el control de costos y pagos de pacientes externos, la gestión de usuarios y
+          roles del sistema, y la generación de reportes estadísticos y mensuales para uso interno y remisión al
+          SEDEGES.</p>
+        <div class="diagram-img-wrap">
+          <img src="assets/img/modulo4-administrativa.png" alt="Módulo IV – Gestión Administrativa y Reportes">
+        </div>
+      </div>
+
+      <!-- CASOS DE USO EXPANDIDO -->
+      <div id="casos-uso-expandido" class="diagram-box">
+        <h3><i data-lucide="expand"></i> 19. Diagrama de Casos de Uso Expandido</h3>
+
+        <!-- CUE 1: Registro de Beneficiarios -->
+        <div class="use-case-block">
+          <h4><i data-lucide="user-plus"></i> Caso Expandido 1 – Registro de Beneficiarios</h4>
+          <table class="use-case-info-table">
+            <tr>
+              <td>Caso de uso:</td>
+              <td><strong>Registro de Beneficiarios</strong></td>
+            </tr>
+            <tr>
+              <td>Actores:</td>
+              <td>Personal Administrativo</td>
+            </tr>
+            <tr>
+              <td>Propósito:</td>
+              <td>Guardar los datos personales, tipo de paciente y grado de discapacidad para inscribir a un nuevo
+                beneficiario en el instituto.</td>
+            </tr>
+            <tr>
+              <td>Resumen:</td>
+              <td>El Personal Administrativo ingresará al sistema en el módulo de beneficiarios, procederá a ingresar
+                los datos del nuevo paciente (ya sea interno o externo) y registrará su grado de discapacidad cognitiva.
+                Al finalizar el registro, el sistema emitirá un mensaje de confirmación del proceso y generará el
+                expediente.</td>
+            </tr>
+            <tr>
+              <td>Tipo:</td>
+              <td>Primario y real</td>
+            </tr>
+          </table>
+          <div class="use-case-flow-title">Curso normal de los eventos</div>
+          <table class="use-case-flow-table">
+            <thead>
+              <tr>
+                <th>Acción de los actores</th>
+                <th>Respuesta del sistema</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1. Este caso de uso inicia cuando el Personal Administrativo selecciona la opción para registrar un
+                  nuevo beneficiario.</td>
+                <td>2. El sistema muestra la ventana de registro de beneficiario.</td>
+              </tr>
+              <tr>
+                <td>3. El Personal Administrativo ingresa los datos personales, selecciona el tipo de paciente
+                  (interno/externo) y el grado de discapacidad cognitiva.</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4. El Personal Administrativo selecciona el botón "Guardar".</td>
+                <td>5. El sistema verifica que todos los campos obligatorios estén ingresados correctamente y que estén
+                  llenos.</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>6. El sistema almacena los datos en la base de datos y genera el código único del paciente.</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>7. El sistema muestra un cuadro de diálogo con un mensaje indicando que los datos se guardaron
+                  correctamente.</td>
+              </tr>
+              <tr>
+                <td>8. El Personal Administrativo se entera de lo sucedido y cierra el cuadro de diálogo que se mostró.
+                </td>
+                <td>9. Se limpian los campos de la ventana de registro de beneficiarios.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- CUE 2: Control de Sesiones -->
+        <div class="use-case-block">
+          <h4><i data-lucide="clipboard-list"></i> Caso Expandido 2 – Control de Sesiones</h4>
+          <table class="use-case-info-table">
+            <tr>
+              <td>Caso de uso:</td>
+              <td><strong>Control de Sesiones</strong></td>
+            </tr>
+            <tr>
+              <td>Actores:</td>
+              <td>Especialista</td>
+            </tr>
+            <tr>
+              <td>Propósito:</td>
+              <td>Registrar la asistencia y detallar el procedimiento realizado durante una sesión de terapia específica
+                de un beneficiario.</td>
+            </tr>
+            <tr>
+              <td>Resumen:</td>
+              <td>El Especialista ingresará al módulo de terapias asignadas, seleccionará la terapia correspondiente al
+                beneficiario y registrará la fecha, asistencia y los avances o procedimientos de la sesión del día. Al
+                finalizar, el sistema actualizará el progreso terapéutico.</td>
+            </tr>
+            <tr>
+              <td>Tipo:</td>
+              <td>Primario y real</td>
+            </tr>
+          </table>
+          <div class="use-case-flow-title">Curso normal de los eventos</div>
+          <table class="use-case-flow-table">
+            <thead>
+              <tr>
+                <th>Acción de los actores</th>
+                <th>Respuesta del sistema</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1. Este caso de uso inicia cuando el Especialista selecciona la opción de control de sesiones de
+                  terapia.</td>
+                <td>2. El sistema muestra la lista de terapias programadas para el día o la ventana de búsqueda de
+                  planes terapéuticos.</td>
+              </tr>
+              <tr>
+                <td>3. El Especialista selecciona la terapia del beneficiario que acaba de atender.</td>
+                <td>4. El sistema despliega el formulario de registro de sesión.</td>
+              </tr>
+              <tr>
+                <td>5. El Especialista marca la asistencia, detalla el procedimiento realizado en la sesión, añade
+                  observaciones y presiona "Guardar".</td>
+                <td>6. El sistema valida que el campo de detalles del procedimiento no esté vacío.</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>7. El sistema almacena el reporte de la sesión en la base de datos.</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>8. El sistema muestra un cuadro de diálogo con un mensaje indicando que la sesión se guardó
+                  correctamente.</td>
+              </tr>
+              <tr>
+                <td>9. El Especialista se entera de lo sucedido y cierra el cuadro de diálogo.</td>
+                <td>10. El sistema actualiza el estado de las sesiones completadas en el plan terapéutico.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- CUE 3: Control de Costos -->
+        <div class="use-case-block">
+          <h4><i data-lucide="credit-card"></i> Caso Expandido 3 – Control de Costos</h4>
+          <table class="use-case-info-table">
+            <tr>
+              <td>Caso de uso:</td>
+              <td><strong>Control de Costos</strong></td>
+            </tr>
+            <tr>
+              <td>Actores:</td>
+              <td>Personal Administrativo</td>
+            </tr>
+            <tr>
+              <td>Propósito:</td>
+              <td>Registrar el pago por los servicios brindados (evaluaciones o terapias) a los pacientes externos.</td>
+            </tr>
+            <tr>
+              <td>Resumen:</td>
+              <td>El Personal Administrativo ingresará al módulo de pagos, buscará al paciente externo y seleccionará el
+                servicio a cobrar (ej. 10 Bs por terapia, 60 Bs por evaluación). Procederá a registrar el ingreso del
+                dinero. Al finalizar, el sistema emitirá el comprobante de pago.</td>
+            </tr>
+            <tr>
+              <td>Tipo:</td>
+              <td>Primario y real</td>
+            </tr>
+          </table>
+          <div class="use-case-flow-title">Curso normal de los eventos</div>
+          <table class="use-case-flow-table">
+            <thead>
+              <tr>
+                <th>Acción de los actores</th>
+                <th>Respuesta del sistema</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1. Este caso de uso inicia cuando el Personal Administrativo selecciona la opción de cobro de
+                  servicios.</td>
+                <td>2. El sistema muestra la ventana de pagos y facturación.</td>
+              </tr>
+              <tr>
+                <td>3. El Personal Administrativo busca al paciente externo y selecciona el concepto a cobrar (terapia o
+                  evaluación).</td>
+                <td>4. El sistema carga el monto predeterminado según el tipo de servicio seleccionado.</td>
+              </tr>
+              <tr>
+                <td>5. El Personal Administrativo verifica el monto, recibe el dinero físico y presiona el botón
+                  "Registrar Pago".</td>
+                <td>6. El sistema verifica la transacción.</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>7. El sistema registra el ingreso económico en la base de datos bajo el código del paciente.</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>8. El sistema muestra un mensaje de pago exitoso y habilita la opción de imprimir comprobante.</td>
+              </tr>
+              <tr>
+                <td>9. El Personal Administrativo imprime el comprobante y cierra el mensaje de confirmación.</td>
+                <td>10. Se limpian los campos de la ventana de cobro de servicios.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div><!-- end #casos-uso-expandido -->
+
+      <!-- DIAGRAMA DE CLASES -->
+      <div id="clases" class="diagram-box">
+        <h3><i data-lucide="boxes"></i> 20. Diagrama de Clases</h3>
+        <p class="diagram-desc">Modelo orientado a objetos del sistema que muestra las clases principales (Beneficiario,
+          Especialista, Terapia, Sesión, etc.), sus atributos, métodos y las relaciones de asociación, herencia y
+          composición entre ellas.</p>
+        <div class="diagram-img-wrap">
+          <img src="assets/img/diagrama-clases.png" alt="Diagrama de Clases">
+        </div>
+      </div>
+
+      <!-- DIAGRAMA ER -->
+      <div id="der" class="diagram-box">
+        <h3><i data-lucide="database"></i> 21. Diagrama Entidad–Relación</h3>
+        <p class="diagram-desc">Representación de la base de datos relacional del sistema, mostrando las entidades, sus
+          atributos clave y las relaciones entre tablas que permiten gestionar la información clínica, terapéutica y
+          administrativa del IDAI.</p>
+        <div class="diagram-img-wrap">
+          <img src="assets/img/diagrama-er.png" alt="Diagrama E-R">
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-icon-ft"><i data-lucide="brain"></i></div>
+          <h3>IDAI – SIGAP-DIC</h3>
+          <p>Sistema de Información para Discapacidad Intelectual y Cognitiva · UMSA · 2026.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Análisis</h4>
+          <ul>
+            <li><a href="marco-teorico.html">Marco Teórico</a></li>
+            <li><a href="modelo-ambiental.html">Modelo Ambiental</a></li>
+            <li><a href="modelo-comportamiento.html">Modelo de Comportamiento</a></li>
+            <li><a href="orientado-objetos.html">Orientado a Objetos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Universidad</h4>
+          <ul>
+            <li><a href="#">UMSA · Inf-241</a></li>
+            <li><a href="#">M.sc. Miguel Cotaña Mier</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 IDAI – Instituto de Adaptación Infantil. Proyecto Académico UMSA.</span>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+
+</html>

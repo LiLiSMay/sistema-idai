@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marco Teórico – IDAI SIGAP-DIC</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+
+<body>
+  <button class="sidebar-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2.5">
+      <line x1="3" y1="6" x2="21" y2="6" />
+      <line x1="3" y1="12" x2="21" y2="12" />
+      <line x1="3" y1="18" x2="21" y2="18" />
+    </svg></button>
+  <aside class="sidebar">
+    <a href="index.html" class="sidebar-logo">
+      <div class="logo-icon"><i data-lucide="brain" style="width:24px;height:24px;stroke:white"></i></div>
+      <div class="logo-text">IDAI<br><span>SIGAP-DIC</span></div>
+    </a>
+    <nav class="sidebar-nav">
+      <span class="nav-section-label">Principal</span>
+      <ul style="list-style:none">
+        <li class="nav-item"><a href="index.html" class="nav-link"><span class="icon"><i
+                data-lucide="home"></i></span>Inicio</a></li>
+        <li class="nav-item nav-has-sub">
+          <a href="#" class="nav-link"><span class="icon"><i data-lucide="book-open"></i></span>Marco Teórico</a>
+          <ul class="nav-submenu">
+            <li><a href="marco-teorico.html#intro" class="nav-link">1. Introducción</a></li>
+            <li><a href="marco-teorico.html#antecedentes" class="nav-link">2. Antecedentes</a></li>
+            <li><a href="marco-teorico.html#planteamiento" class="nav-link">3. Planteamiento del Problema</a></li>
+            <li><a href="marco-teorico.html#arbol" class="nav-link">4. Árbol de Problemas</a></li>
+            <li><a href="marco-teorico.html#formulacion" class="nav-link">5. Formulación del Problema</a></li>
+            <li><a href="marco-teorico.html#objetivos" class="nav-link">6. Objetivos</a></li>
+            <li><a href="marco-teorico.html#justificacion" class="nav-link">7. Justificación</a></li>
+            <li><a href="marco-teorico.html#alcances" class="nav-link">8. Alcances y Límites</a></li>
+            <li><a href="marco-teorico.html#metodologia" class="nav-link">10. Metodología RUP</a></li>
+            <li><a href="marco-teorico.html#planificacion" class="nav-link">12. Planificación</a></li>
+          </ul>
+        </li>
+        <span class="nav-section-label">Análisis Estructurado</span>
+        <li class="nav-item nav-has-sub">
+          <a href="#" class="nav-link"><span class="icon"><i data-lucide="leaf"></i></span>Modelo Ambiental</a>
+          <ul class="nav-submenu">
+            <li><a href="modelo-ambiental.html#proposito" class="nav-link">13.1 Declaración de Propósitos</a></li>
+            <li><a href="modelo-ambiental.html#contexto" class="nav-link">13.2 Diagrama de Contexto</a></li>
+            <li><a href="modelo-ambiental.html#acontecimientos" class="nav-link">13.3 Lista de Acontecimientos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item nav-has-sub">
+          <a href="#" class="nav-link"><span class="icon"><i data-lucide="git-branch"></i></span>Modelo de
+            Comportamiento</a>
+          <ul class="nav-submenu">
+            <li><a href="modelo-comportamiento.html#dfd" class="nav-link">14. DFD por Niveles</a></li>
+            <li><a href="modelo-comportamiento.html#diagrama-procesos" class="nav-link">15. Diagrama de Procesos</a></li>
+            <li><a href="modelo-comportamiento.html#subproceso1" class="nav-link">15.1 Subproceso I</a></li>
+            <li><a href="modelo-comportamiento.html#subproceso2" class="nav-link">15.2 Subproceso II</a></li>
+            <li><a href="modelo-comportamiento.html#subproceso3" class="nav-link">15.3 Subproceso III</a></li>
+            <li><a href="modelo-comportamiento.html#subproceso4" class="nav-link">15.4 Subproceso IV</a></li>
+            <li><a href="modelo-comportamiento.html#subproceso5" class="nav-link">15.5 Subproceso V</a></li>
+          </ul>
+        </li>
+        <span class="nav-section-label">Orientado a Objetos</span>
+        <li class="nav-item nav-has-sub">
+          <a href="#" class="nav-link"><span class="icon"><i data-lucide="shapes"></i></span>Análisis OO</a>
+          <ul class="nav-submenu">
+            <li><a href="orientado-objetos.html#requerimientos" class="nav-link">16. Requerimientos</a></li>
+            <li><a href="orientado-objetos.html#casos-uso" class="nav-link">17–19. Casos de Uso</a></li>
+            <li><a href="orientado-objetos.html#clases" class="nav-link">20. Diagrama de Clases</a></li>
+            <li><a href="orientado-objetos.html#der" class="nav-link">21. Diagrama E-R</a></li>
+          </ul>
+        </li>
+        <span class="nav-section-label">Más</span>
+        <li class="nav-item"><a href="videos.html" class="nav-link"><span class="icon"><i
+                data-lucide="video"></i></span>Videos</a></li>
+        <li class="nav-item"><a href="contactos.html" class="nav-link"><span class="icon"><i
+                data-lucide="users"></i></span>Contactos</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">© 2026 IDAI Bolivia<br>UMSA · Inf-241</div>
+  </aside>
+
+  <div class="main-content">
+    <header class="topbar">
+      <span class="topbar-title">Universidad Mayor de San Andrés — <span>Inf-241</span></span>
+      <a href="contactos.html" class="pill pill-outline">Contacto</a>
+    </header>
+    <section class="page-hero">
+      <div class="breadcrumb"><a href="index.html">Inicio</a><span>›</span> Marco Teórico</div>
+      <h1><i data-lucide="book-open"></i> Marco Teórico</h1>
+      <p>Generalidades del proyecto: antecedentes del IDAI, planteamiento del problema, objetivos, justificación,
+        alcances, metodología RUP y planificación.</p>
+    </section>
+
+    <main class="page-content">
+
+      <!-- INTRODUCCION -->
+      <div id="intro" class="intro-box">
+        <h2><i data-lucide="info"></i> 1. Introducción</h2>
+        <p>El Instituto de Adaptación Infantil (IDAI) presta servicios médicos, terapéuticos y de acogida para niños y
+          personas con discapacidad. Actualmente, la institución se enfrenta a un reto logístico significativo: los
+          profesionales elaboran los reportes de forma manual. Además, cuentan con un archivo de más de <strong>17,000
+            expedientes físicos</strong> en papel, y el personal médico carece de herramientas informáticas para el
+          registro y consulta ágil de esta información.</p>
+        <p>Este proyecto propone el diseño y desarrollo de una base de datos relacional para digitalizar y centralizar
+          la información clínica, terapéutica y administrativa del IDAI, permitiendo un manejo eficiente de los
+          historiales, la asignación de terapias y la generación de reportes mensuales.</p>
+      </div>
+
+      <!-- ANTECEDENTES INSTITUCIONALES -->
+      <div id="antecedentes" class="intro-box" style="border-left-color: var(--secondary)">
+        <h2><i data-lucide="landmark"></i> 2. Antecedentes Institucionales</h2>
+        <p>El Instituto de Adaptación Infantil (IDAI) de la ciudad de La Paz es una institución especializada en la
+          atención integral de niños, adolescentes y personas con discapacidad intelectual y trastornos del
+          neurodesarrollo. Entre las principales áreas de atención se encuentran: neurología, psiquiatría, psicología,
+          fisioterapia, terapia ocupacional, psicopedagogía, fonoaudiología y estimulación temprana.</p>
+        <p>El instituto cuenta con aproximadamente <strong>17,000 expedientes almacenados físicamente</strong>, lo cual
+          dificulta la búsqueda rápida de información, el seguimiento de pacientes y la organización de reportes
+          clínicos. El personal médico y administrativo no dispone de un sistema informático centralizado, ocasionando
+          retrasos, riesgo de pérdida de documentación y dificultades en la generación de reportes estadísticos.</p>
+        <p><strong>Misión:</strong> Brindar atención integral especializada a niños, niñas y adolescentes con
+          discapacidad intelectual y trastornos del desarrollo neuropsicoevolutivo, mediante servicios médicos,
+          terapéuticos, educativos y de rehabilitación, contribuyendo al desarrollo de sus capacidades y mejorando su
+          calidad de vida.</p>
+        <p><strong>Visión:</strong> Ser una institución referente a nivel departamental y nacional en la atención
+          integral y rehabilitación de niños, niñas y adolescentes con discapacidad intelectual, destacándose por la
+          calidad de sus servicios y el compromiso humano de su personal.</p>
+      </div>
+
+      <!-- ANTECEDENTES SIMILARES -->
+      <div class="intro-box" style="border-left-color: var(--purple)">
+        <h2><i data-lucide="search"></i> 2.2 Antecedentes de Proyectos Similares</h2>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Título</th>
+              <th>Autor</th>
+              <th>Año</th>
+              <th>Institución</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sistema Web para la Gestión de Historias Clínicas en Centros de Rehabilitación</td>
+              <td>Carlos A. Molina Pérez</td>
+              <td>2021</td>
+              <td>Universidad Nacional de Colombia</td>
+            </tr>
+            <tr>
+              <td>Sistema de Gestión Hospitalaria para el Control de Pacientes y Expedientes Clínicos</td>
+              <td>María F. López García</td>
+              <td>2020</td>
+              <td>Universidad Tecnológica de México</td>
+            </tr>
+            <tr>
+              <td>Sistema Web para la Gestión de Terapias y Seguimiento de Pacientes con Discapacidad Intelectual</td>
+              <td>Javier A. Ruiz Medina</td>
+              <td>2022</td>
+              <td>Universidad de Guadalajara</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PLANTEAMIENTO -->
+      <div id="planteamiento" class="intro-box" style="border-left-color: var(--primary)">
+        <h2><i data-lucide="alert-triangle"></i> 3. Planteamiento del Problema</h2>
+        <p>En la ciudad de La Paz, el IDAI ofrece atención integral mediante terapias, evaluaciones diagnósticas y
+          seguimiento clínico especializado. Sin embargo, gran parte de la información médica y administrativa aún es
+          gestionada manualmente. Las principales problemáticas identificadas son:</p>
+        <ul>
+          <li>Dificultad en el registro y almacenamiento organizado de la información de los pacientes.</li>
+          <li>Acceso lento a los expedientes clínicos debido al manejo manual de documentos físicos.</li>
+          <li>Falta de control eficiente de terapias, evaluaciones y seguimientos.</li>
+          <li>Demora en la generación de reportes clínicos y administrativos.</li>
+          <li>Falta de centralización de la información médica y terapéutica.</li>
+          <li>Riesgo de pérdida, deterioro o duplicidad de información por el uso de expedientes físicos.</li>
+        </ul>
+      </div>
+
+      <!-- ARBOL -->
+      <div id="arbol" class="diagram-box">
+        <h3><i data-lucide="git-fork"></i> 4. Árbol de Problemas</h3>
+        <div>
+          <img src="assets/img/arbol-problema.png" alt="Árbol de Problemas" style="max-width:100%;border-radius:8px">
+        </div>
+      </div>
+
+      <!-- FORMULACION -->
+      <div id="formulacion" class="intro-box" style="border-left-color: var(--green)">
+        <h2><i data-lucide="help-circle"></i> 5. Formulación del Problema</h2>
+        <p><strong>Problema General:</strong> ¿De qué manera se puede optimizar la gestión de información clínica,
+          terapéutica y administrativa de los pacientes del Instituto de Adaptación Infantil (IDAI) mediante el
+          desarrollo de un sistema informático?</p>
+        <p><strong>Problemas Específicos:</strong></p>
+        <ul>
+          <li>¿Cómo mejorar el registro y almacenamiento de la información de los pacientes?</li>
+          <li>¿Cómo agilizar el acceso a los expedientes clínicos y antecedentes terapéuticos?</li>
+          <li>¿Cómo optimizar el control de terapias, evaluaciones y seguimientos clínicos?</li>
+          <li>¿Cómo reducir el tiempo requerido para la generación de reportes clínicos?</li>
+          <li>¿Cómo centralizar la información médica para facilitar la coordinación entre especialistas?</li>
+          <li>¿Cómo disminuir el riesgo de pérdida, deterioro o duplicidad de información?</li>
+        </ul>
+      </div>
+
+      <!-- OBJETIVOS -->
+      <div id="objetivos" class="intro-box" style="border-left-color: var(--accent)">
+        <h2><i data-lucide="target"></i> 6. Objetivos</h2>
+        <p><strong>Objetivo General:</strong> Diseñar e implementar un sistema de base de datos para la gestión interna
+          de expedientes clínicos, control de terapias y reportes del Instituto de Adaptación Infantil (IDAI) en la
+          ciudad de La Paz.</p>
+        <p><strong>Objetivos Específicos:</strong></p>
+        <ul>
+          <li>Identificar los tipos de discapacidad y los servicios especializados disponibles en el IDAI.</li>
+          <li>Proyectar un modelo de base de datos relacional para registrar información de beneficiarios y tutores.
+          </li>
+          <li>Implementar un módulo para registrar al personal médico y asignar planes de intervención.</li>
+          <li>Automatizar el registro de evaluaciones diagnósticas y la generación de informes estadísticos.</li>
+          <li>Optimizar la gestión y seguimiento de terapias mediante herramientas informáticas.</li>
+          <li>Controlar los costos asociados a los servicios para pacientes externos.</li>
+        </ul>
+      </div>
+
+      <!-- JUSTIFICACION -->
+      <div id="justificacion" class="intro-box" style="border-left-color: var(--secondary)">
+        <h2><i data-lucide="check-circle"></i> 7. Justificación</h2>
+        <p><strong>Económica:</strong> Reducción de costos asociados al manejo manual de documentación física,
+          almacenamiento de expedientes y tiempo invertido en procesos administrativos. La digitalización optimizará
+          recursos humanos y disminuirá el uso excesivo de material impreso.</p>
+        <p><strong>Social:</strong> Mejora en la atención a niños, niñas y adolescentes con discapacidad intelectual y
+          cognitiva. El sistema beneficiará a especialistas y familias, promoviendo una atención más eficiente y
+          oportuna.</p>
+        <p><strong>Institucional:</strong> Fortalecimiento de los procesos administrativos y clínicos del IDAI,
+          mejorando la coordinación entre las diferentes áreas de atención.</p>
+        <p><strong>Tecnológica:</strong> Modernización de los procesos de gestión mediante la implementación de un
+          sistema web y base de datos centralizada con Flask y Oracle.</p>
+      </div>
+
+      <!-- ALCANCES -->
+      <div id="alcances" class="intro-box" style="border-left-color: var(--purple)">
+        <h2><i data-lucide="maximize"></i> 8. Alcances y Límites</h2>
+        <p><strong>Alcances:</strong></p>
+        <ul>
+          <li>Registro y administración de pacientes internos y externos.</li>
+          <li>Gestión de expedientes clínicos digitales.</li>
+          <li>Registro de evaluaciones médicas y terapéuticas.</li>
+          <li>Administración de especialistas y áreas de atención.</li>
+          <li>Control y seguimiento de terapias realizadas.</li>
+          <li>Generación de reportes clínicos y administrativos.</li>
+          <li>Gestión de usuarios y control de acceso mediante roles.</li>
+          <li>Centralización de información en base de datos relacional.</li>
+        </ul>
+        <p><strong>Límites:</strong> El sistema no incluirá app móvil, módulos avanzados de contabilidad, integración
+          con otras instituciones externas ni inteligencia artificial para diagnósticos. Requiere acceso a red interna
+          institucional.</p>
+      </div>
+
+      <!-- METODOLOGIA -->
+      <div id="metodologia" class="intro-box" style="border-left-color: var(--green)">
+        <h2><i data-lucide="layers"></i> 10. Metodología de Investigación — RUP</h2>
+        <p>Se empleó la metodología <strong>Rational Unified Process (RUP)</strong>, que permite desarrollar sistemas de
+          software de manera organizada, incremental e iterativa, dividida en cuatro fases:</p>
+        <table class="styled-table" style="margin-top:12px">
+          <thead>
+            <tr>
+              <th>Fase</th>
+              <th>Actividades Principales</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Inicio</strong></td>
+              <td>Identificación del problema, levantamiento de información, definición de objetivos y alcance.</td>
+            </tr>
+            <tr>
+              <td><strong>Elaboración</strong></td>
+              <td>Análisis del sistema, requerimientos, diagramas (ambiental, casos de uso, clases, E-R) y diseño de
+                base de datos.</td>
+            </tr>
+            <tr>
+              <td><strong>Construcción</strong></td>
+              <td>Desarrollo del sistema con Flask + Oracle: módulos de pacientes, cuidadores, especialistas, terapias,
+                historiales y reportes.</td>
+            </tr>
+            <tr>
+              <td><strong>Transición</strong></td>
+              <td>Pruebas funcionales, validaciones CRUD, correcciones y documentación final.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top:14px"><strong>Desarrollo Incremental:</strong> Incremento 1: Pacientes y cuidadores ·
+          Incremento 2: Especialistas · Incremento 3: Historiales y terapias · Incremento 4: Reportes y seguridad.</p>
+      </div>
+
+      <!-- PLANIFICACION -->
+      <div id="planificacion" class="intro-box" style="border-left-color: var(--orange, #FF6B35)">
+        <h2><i data-lucide="calendar"></i> 12. Cronograma de Actividades</h2>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>N°</th>
+              <th>Actividad</th>
+              <th>S1</th>
+              <th>S2</th>
+              <th>S3</th>
+              <th>S4</th>
+              <th>S5</th>
+              <th>S6</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Recolección de información</td>
+              <td class="check">✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Análisis del problema</td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Definición de requerimientos</td>
+              <td></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Elaboración de diagramas</td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Diseño de base de datos</td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Desarrollo del sistema</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Implementación de funcionalidades</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Pruebas y validaciones</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Corrección de errores</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Elaboración de documentación final</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="check">✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="gantt" class="diagram-box">
+        <h3><i data-lucide="bar-chart-2"></i> 12.3 Diagrama de Gantt</h3>
+        <div>
+          <img src="assets/img/gantt.png" alt="Diagrama de Gantt" style="max-width:100%;border-radius:8px">
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-icon-ft"><i data-lucide="brain"></i></div>
+          <h3>IDAI – SIGAP-DIC</h3>
+          <p>Sistema de Información para Discapacidad Intelectual y Cognitiva · UMSA · Inf-241 · 2026.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Análisis</h4>
+          <ul>
+            <li><a href="marco-teorico.html">Marco Teórico</a></li>
+            <li><a href="modelo-ambiental.html">Modelo Ambiental</a></li>
+            <li><a href="modelo-comportamiento.html">Modelo de Comportamiento</a></li>
+            <li><a href="orientado-objetos.html">Orientado a Objetos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Universidad</h4>
+          <ul>
+            <li><a href="#">UMSA · Inf-241</a></li>
+            <li><a href="#">M.sc. Miguel Cotaña Mier</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 IDAI – Instituto de Adaptación Infantil. Proyecto Académico UMSA.</span>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+
+</html>
